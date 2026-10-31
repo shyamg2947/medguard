@@ -1,0 +1,43 @@
+documents:
+  - id: DOC-BEERS-2023
+    title: "American Geriatrics Society 2023 Updated Beers Criteria for Potentially Inappropriate Medication Use in Older Adults"
+    publisher: "American Geriatrics Society"
+    year: 2023
+    file_path: "knowledge/guidelines/ags_beers_criteria.md"
+    license_note: "Paraphrased clinical summary for educational decision support. Original guideline published by AGS."
+
+  - id: DOC-STOPP-START-V3
+    title: "STOPP/START Criteria for Potentially Inappropriate Prescribing in Older People: Version 3"
+    publisher: "European Geriatric Medicine Society"
+    year: 2023
+    file_path: "knowledge/guidelines/stopp_start_v3.md"
+    license_note: "Paraphrased clinical summary for educational decision support. Original guideline published by O'Mahony et al."
+
+  - id: DOC-MAI
+    title: "The Medication Appropriateness Index: A Tool for Assessing Prescribing Appropriateness"
+    publisher: "Journal of Clinical Epidemiology"
+    year: 1992
+    file_path: "knowledge/guidelines/medication_appropriateness_index.md"
+    license_note: "Summary of Hanlon et al. 10-point scoring framework."
+
+  - id: DOC-BLEEDING
+    title: "Clinical Guidance on Anticoagulant and Antiplatelet Bleeding Risks with NSAIDs"
+    publisher: "FDA / American College of Cardiology"
+    year: 2022
+    file_path: "knowledge/guidelines/anticoagulant_bleeding.md"
+    license_note: "Synthesized clinical safety monographs."
+
+  - id: DOC-TRIPLE-WHAMMY
+    title: "Nephrotoxicity of Concurrent ACE Inhibitor, Diuretic, and NSAID Therapy (The Triple Whammy)"
+    publisher: "British Journal of Clinical Pharmacology"
+    year: 2005
+    file_path: "knowledge/guidelines/triple_whammy_renal.md"
+    license_note: "Synthesized clinical safety monograph."
+
+  - id: DOC-ACB
+    title: "Anticholinergic Cognitive Burden Scale and Geriatric Delirium/Fall Risk"
+    publisher: "Aging & Mental Health"
+    year: 2008
+    file_path: "knowledge/guidelines/anticholinergic_cognitive_burden.md"
+    license_note: "Summary of Boustani et al. scale and evidence base."
+

@@ -1,0 +1,87 @@
+cascades:
+  - id: CASCADE-CCB-DIURETIC
+    initiator:
+      class: calcium_channel_blocker
+    symptom_trigger: "swelling"
+    secondary:
+      class: loop_diuretic
+    time_window_days: 180
+    severity: moderate
+    domain: Cardiology
+    mechanism: "Calcium channel blockers frequently cause peripheral edema (swelling) due to precapillary vasodilation, which may be mistakenly treated with a loop diuretic rather than adjusting the blocker."
+    question: "Could the ankle swelling and subsequent water pill (diuretic) be related to the calcium channel blocker started earlier?"
+    patient_message:
+      en: "Your water pill (diuretic) was started after your blood pressure medicine. Swelling is a known side effect of that blood pressure pill; please ask your doctor if the two might be connected."
+      hi: "आपकी सूजन की दवा आपके रक्तचाप की दवा के बाद शुरू की गई थी। पैरों में सूजन उस रक्तचाप की दवा का एक ज्ञात दुष्प्रभाव है; कृपया अपने डॉक्टर से पूछें कि क्या दोनों जुड़े हो सकते हैं।"
+    sources:
+      - "Rochon PA, Gurwitz JH. The prescribing cascade. BMJ. 1997"
+      - "AGS Beers Criteria 2023 Update"
+
+  - id: CASCADE-NSAID-ANTIHYPERTENSIVE
+    initiator:
+      class: nsaid
+    symptom_trigger: "raised_blood_pressure"
+    secondary:
+      class: antihypertensive
+    time_window_days: 90
+    severity: moderate
+    domain: Cardiology
+    mechanism: "Regular NSAID use impairs renal prostaglandin synthesis and promotes sodium retention, raising blood pressure and potentially triggering addition of an antihypertensive."
+    question: "Could the recent increase in blood pressure or new blood pressure pill be related to regular painkiller (NSAID) use?"
+    patient_message:
+      en: "Pain medicines like NSAIDs can raise blood pressure. Please ask your doctor if your pain medicine contributed to your blood pressure changes."
+      hi: "दर्द निवारक दवाएं रक्तचाप बढ़ा सकती हैं। कृपया अपने डॉक्टर से पूछें कि क्या दर्द निवारक से आपका रक्तचाप बढ़ा है।"
+    sources:
+      - "Johnson AG, et al. NSAIDs and increased blood pressure. Ann Intern Med. 1994"
+
+  - id: CASCADE-ACEI-COUGH
+    initiator:
+      class: ace_inhibitor
+    symptom_trigger: "cough"
+    secondary:
+      class: cough_suppressant
+    time_window_days: 60
+    severity: low
+    domain: Geriatrics/Neurology
+    mechanism: "ACE inhibitors induce bradykinin accumulation causing persistent dry cough in up to 15% of patients, often misattributed to a respiratory infection and treated with suppressants."
+    question: "Is your persistent cough related to your ACE inhibitor blood pressure medicine, and would switching to an ARB be appropriate?"
+    patient_message:
+      en: "ACE inhibitor blood pressure medicines commonly cause a dry cough. Please ask your doctor whether switching to a different medicine (like an ARB) would stop the cough."
+      hi: "रक्तचाप की कुछ दवाएं सूखी खांसी का कारण बन सकती हैं। कृपया अपने डॉक्टर से पूछें कि क्या दवा बदलने से खांसी बंद हो सकती है।"
+    sources:
+      - "Dicpinigaitis PV. Angiotensin-converting enzyme inhibitor-induced cough. Chest. 2006"
+
+  - id: CASCADE-DOPAMINE-ANTIPARKINSON
+    initiator:
+      class: antiemetic_dopamine_antagonist
+    symptom_trigger: "tremor"
+    secondary:
+      class: anticholinergic_antiparkinson
+    time_window_days: 90
+    severity: high
+    domain: Geriatrics/Neurology
+    mechanism: "Central dopamine receptor antagonism (e.g. metoclopramide or antipsychotics) can cause drug-induced parkinsonism, which may be mistakenly treated with anticholinergic drugs like trihexyphenidyl."
+    question: "Could the tremors or stiffness be drug-induced parkinsonism from a stomach or psychiatric medicine, rather than primary Parkinson's disease?"
+    patient_message:
+      en: "Certain nausea and psychiatric medicines can cause tremors and stiffness. Please ask your doctor if your tremor medicine was started to treat a side effect of another pill."
+      hi: "उल्टी या पेट की कुछ दवाएं कंपकंपी पैदा कर सकती हैं। कृपया अपने डॉक्टर से पूछें कि क्या यह किसी अन्य दवा के दुष्प्रभाव के कारण है।"
+    sources:
+      - "Thanvi B, Treadwell S. Drug induced parkinsonism. Postgrad Med J. 2009"
+
+  - id: CASCADE-CHOLINESTERASE-BLADDER
+    initiator:
+      class: cholinesterase_inhibitor
+    symptom_trigger: "incontinence"
+    secondary:
+      class: anticholinergic_bladder
+    time_window_days: 120
+    severity: high
+    domain: Geriatrics/Neurology
+    mechanism: "Cholinesterase inhibitors enhance acetylcholine action, precipitating urinary urge incontinence, which is then counteracted with anticholinergic bladder medications that worsen cognition."
+    question: "Is the bladder medication counteracting the dementia medication, creating an opposing pharmacological tug-of-war?"
+    patient_message:
+      en: "Your bladder medication works in the opposite way of your memory medication and may cancel its benefit. Please discuss this combination with your specialist."
+      hi: "आपकी मूत्राशय की दवा आपकी याददाश्त की दवा के विपरीत काम करती है और इसके प्रभाव को कम कर सकती है। कृपया अपने विशेषज्ञ से चर्चा करें।"
+    sources:
+      - "Gill SS, et al. Prescribing cascade involving cholinesterase inhibitors and anticholinergics. Lancet. 2005"
+

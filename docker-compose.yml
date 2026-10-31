@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - MODE=demo
+      - FREE_TIER_MODE=true
+      - CHANNEL=simulator
+      - DATABASE_URL=sqlite:///./medguard.db
+    volumes:
+      - .:/app
+    command: uvicorn backend.app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  web:
+    image: node:20-alpine
+    working_dir: /app/frontend
+    volumes:
+      - ./frontend:/app/frontend
+    ports:
+      - "3000:3000"
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0 --port 3000"
+    depends_on:
+      - api
+

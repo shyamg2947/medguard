@@ -1,0 +1,110 @@
+herbal_products:
+  - id: HERB-ASHWAGANDHA
+    canonical_name: ashwagandha
+    aliases: ["withania somnifera", "asgandh", "indian ginseng"]
+    category: ayush
+    primary_actions: ["sedative_synergy", "thyroid_stimulation", "hypotensive"]
+    known_interactions:
+      - drug_or_class: sedative
+        mechanism: "Additive central nervous system depression when combined with sedatives or anxiolytics."
+        severity: moderate
+        evidence: limited
+        source: "Natural Medicines Comprehensive Database / Memorial Sloan Kettering Cancer Center"
+      - drug_or_class: levothyroxine
+        mechanism: "Ashwagandha may increase thyroid hormone concentrations, potentially altering levothyroxine requirements."
+        severity: moderate
+        evidence: limited
+        source: "Memorial Sloan Kettering Cancer Center Integrative Medicine"
+      - drug_or_class: antihypertensive
+        mechanism: "Potential additive blood-pressure lowering effect."
+        severity: low
+        evidence: theoretical
+        source: "Memorial Sloan Kettering Integrative Medicine"
+
+  - id: HERB-GINKGO
+    canonical_name: ginkgo biloba
+    aliases: ["ginkgo", "maidenhair tree"]
+    category: supplement
+    primary_actions: ["antiplatelet"]
+    known_interactions:
+      - drug_or_class: anticoagulant
+        mechanism: "Ginkgo contains ginkgolides that inhibit platelet-activating factor, raising bleeding risk with anticoagulants."
+        severity: high
+        evidence: limited
+        source: "FDA / NIH National Center for Complementary and Integrative Health (NCCIH)"
+      - drug_or_class: antiplatelet
+        mechanism: "Increased risk of bleeding due to additive platelet inhibition."
+        severity: high
+        evidence: limited
+        source: "NIH NCCIH Ginkgo Monograph"
+
+  - id: HERB-TURMERIC
+    canonical_name: turmeric
+    aliases: ["curcumin", "haldi", "curcuma longa"]
+    category: ayush
+    primary_actions: ["antiplatelet", "mild_anticoagulant"]
+    known_interactions:
+      - drug_or_class: anticoagulant
+        mechanism: "High-dose curcumin supplements may exhibit mild antiplatelet effects, potentially increasing bleeding risk with anticoagulants."
+        severity: moderate
+        evidence: limited
+        source: "NIH NCCIH Turmeric Monograph"
+      - drug_or_class: antiplatelet
+        mechanism: "Potential additive bleeding tendency with aspirin or clopidogrel."
+        severity: moderate
+        evidence: limited
+        source: "NIH NCCIH Turmeric Monograph"
+
+  - id: HERB-GARLIC
+    canonical_name: garlic supplement
+    aliases: ["garlic extract", "lahsun", "allium sativum"]
+    category: supplement
+    primary_actions: ["antiplatelet"]
+    known_interactions:
+      - drug_or_class: anticoagulant
+        mechanism: "Garlic components (allicin, ajoene) inhibit platelet aggregation, adding to bleeding risks."
+        severity: moderate
+        evidence: limited
+        source: "NIH NCCIH Garlic Monograph"
+      - drug_or_class: antiplatelet
+        mechanism: "Additive antiplatelet effect when taken in concentrated extract form."
+        severity: moderate
+        evidence: limited
+        source: "NIH NCCIH Garlic Monograph"
+
+  - id: HERB-BRAHMI
+    canonical_name: brahmi
+    aliases: ["bacopa monnieri", "water hyssop"]
+    category: ayush
+    primary_actions: ["cholinergic_enhancement"]
+    known_interactions:
+      - drug_or_class: anticholinergic
+        mechanism: "May antagonize anticholinergic medications due to mild cholinomimetic actions."
+        severity: low
+        evidence: theoretical
+        source: "MSKCC Integrative Medicine: Bacopa"
+
+  - id: HERB-TRIPHALA
+    canonical_name: triphala
+    aliases: ["triphala churna"]
+    category: ayush
+    primary_actions: ["laxative", "gi_motility"]
+    known_interactions:
+      - drug_or_class: oral_medication
+        mechanism: "May alter gut transit time and affect oral absorption of narrow-therapeutic-index drugs."
+        severity: low
+        evidence: theoretical
+        source: "Ayurvedic Pharmacopoeia of India"
+
+  - id: HERB-GILOY
+    canonical_name: giloy
+    aliases: ["tinospora cordifolia", "guduchi"]
+    category: ayush
+    primary_actions: ["immunomodulatory", "hypoglycemic"]
+    known_interactions:
+      - drug_or_class: antidiabetic
+        mechanism: "May exert additive blood glucose-lowering effects with antidiabetic medications."
+        severity: moderate
+        evidence: limited
+        source: "Pharmacological Research on Tinospora Cordifolia"
+

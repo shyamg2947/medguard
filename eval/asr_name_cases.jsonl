@@ -1,0 +1,101 @@
+{"id": "asr-001", "query": "Telma 40 mg once daily", "expected_target": "Telma 40", "expected_status": "accept_candidate"}
+{"id": "asr-002", "query": "Dolo 650 mg", "expected_target": "Dolo 650", "expected_status": "accept_candidate"}
+{"id": "asr-003", "query": "Combiflam tablet twice daily", "expected_target": "Combiflam", "expected_status": "accept_candidate"}
+{"id": "asr-004", "query": "Amlong 5 mg morning", "expected_target": "Amlong 5", "expected_status": "accept_candidate"}
+{"id": "asr-005", "query": "Cardace 5 mg once a day", "expected_target": "Cardace 5", "expected_status": "accept_candidate"}
+{"id": "asr-006", "query": "Lasix 40 mg morning", "expected_target": "Lasix 40", "expected_status": "accept_candidate"}
+{"id": "asr-007", "query": "Glycomet 500 tablet", "expected_target": "Glycomet 500", "expected_status": "accept_candidate"}
+{"id": "asr-008", "query": "Atorva 20 mg night", "expected_target": "Atorva 20", "expected_status": "accept_candidate"}
+{"id": "asr-009", "query": "Pan 40 before breakfast", "expected_target": "Pan 40", "expected_status": "accept_candidate"}
+{"id": "asr-010", "query": "Alprax 0.5 mg bed time", "expected_target": "Alprax 0.5", "expected_status": "accept_candidate"}
+{"id": "asr-011", "query": "tellma 40 mg", "expected_target": "Telma 40", "expected_status": "accept_candidate"}
+{"id": "asr-012", "query": "dolo six fifty", "expected_target": "Dolo 650", "expected_status": "accept_candidate"}
+{"id": "asr-013", "query": "combiflamm tab", "expected_target": "Combiflam", "expected_status": "accept_candidate"}
+{"id": "asr-014", "query": "amlongg 5", "expected_target": "Amlong 5", "expected_status": "accept_candidate"}
+{"id": "asr-015", "query": "cardacee 2.5", "expected_target": "Cardace 2.5", "expected_status": "accept_candidate"}
+{"id": "asr-016", "query": "lasik 40", "expected_target": "Lasix 40", "expected_status": "accept_candidate"}
+{"id": "asr-017", "query": "glyco met 500", "expected_target": "Glycomet 500", "expected_status": "accept_candidate"}
+{"id": "asr-018", "query": "atorwa 10", "expected_target": "Atorva 10", "expected_status": "accept_candidate"}
+{"id": "asr-019", "query": "pan forty", "expected_target": "Pan 40", "expected_status": "accept_candidate"}
+{"id": "asr-020", "query": "alpraks 0.25", "expected_target": "Alprax 0.25", "expected_status": "accept_candidate"}
+{"id": "asr-021", "query": "टेल्मा 40", "expected_target": "Telma 40", "expected_status": "accept_candidate"}
+{"id": "asr-022", "query": "डोलो 650", "expected_target": "Dolo 650", "expected_status": "accept_candidate"}
+{"id": "asr-023", "query": "कॉम्बीफ्लाम", "expected_target": "Combiflam", "expected_status": "accept_candidate"}
+{"id": "asr-024", "query": "एम्लॉन्ग 5", "expected_target": "Amlong 5", "expected_status": "accept_candidate"}
+{"id": "asr-025", "query": "कार्डासि 5", "expected_target": "Cardace 5", "expected_status": "accept_candidate"}
+{"id": "asr-026", "query": "लासिक 40", "expected_target": "Lasix 40", "expected_status": "accept_candidate"}
+{"id": "asr-027", "query": "ग्लुकोमेट 500", "expected_target": "Glycomet 500", "expected_status": "accept_candidate"}
+{"id": "asr-028", "query": "अटोरवा 20", "expected_target": "Atorva 20", "expected_status": "accept_candidate"}
+{"id": "asr-029", "query": "पैन 40", "expected_target": "Pan 40", "expected_status": "accept_candidate"}
+{"id": "asr-030", "query": "एल्प्राक्स", "expected_target": "Alprax 0.5", "expected_status": "accept_candidate"}
+{"id": "asr-031", "query": "voveran 50 mg", "expected_target": "Voveran 50", "expected_status": "accept_candidate"}
+{"id": "asr-032", "query": "ecosprin 75 once daily", "expected_target": "Ecosprin 75", "expected_status": "accept_candidate"}
+{"id": "asr-033", "query": "warf 5 mg", "expected_target": "Warf 5", "expected_status": "accept_candidate"}
+{"id": "asr-034", "query": "coumadin 5 mg", "expected_target": "Coumadin", "expected_status": "accept_candidate"}
+{"id": "asr-035", "query": "eliquis 5 mg", "expected_target": "Eliquis 5", "expected_status": "accept_candidate"}
+{"id": "asr-036", "query": "xarelto 20 mg", "expected_target": "Xarelto 20", "expected_status": "accept_candidate"}
+{"id": "asr-037", "query": "betaloc 50 mg", "expected_target": "Betaloc 50", "expected_status": "accept_candidate"}
+{"id": "asr-038", "query": "metolar 50", "expected_target": "Metolar 50", "expected_status": "accept_candidate"}
+{"id": "asr-039", "query": "dytor 10 mg", "expected_target": "Dytor 10", "expected_status": "accept_candidate"}
+{"id": "asr-040", "query": "aldactone 25 mg", "expected_target": "Aldactone 25", "expected_status": "accept_candidate"}
+{"id": "asr-041", "query": "amaryl 1 mg", "expected_target": "Amaryl 1", "expected_status": "accept_candidate"}
+{"id": "asr-042", "query": "januvia 100", "expected_target": "Januvia 100", "expected_status": "accept_candidate"}
+{"id": "asr-043", "query": "galvus 50", "expected_target": "Galvus 50", "expected_status": "accept_candidate"}
+{"id": "asr-044", "query": "jardiance 10", "expected_target": "Jardiance 10", "expected_status": "accept_candidate"}
+{"id": "asr-045", "query": "forxiga 10", "expected_target": "Forxiga 10", "expected_status": "accept_candidate"}
+{"id": "asr-046", "query": "rosuvas 10", "expected_target": "Rosuvas 10", "expected_status": "accept_candidate"}
+{"id": "asr-047", "query": "pantocid 40", "expected_target": "Pantocid 40", "expected_status": "accept_candidate"}
+{"id": "asr-048", "query": "omez 20", "expected_target": "Omez 20", "expected_status": "accept_candidate"}
+{"id": "asr-049", "query": "razo 20", "expected_target": "Razo 20", "expected_status": "accept_candidate"}
+{"id": "asr-050", "query": "ativan 1 mg", "expected_target": "Ativan 1", "expected_status": "accept_candidate"}
+{"id": "asr-051", "query": "valium 5 mg", "expected_target": "Valium 5", "expected_status": "accept_candidate"}
+{"id": "asr-052", "query": "clonafit 0.5", "expected_target": "Clonafit 0.5", "expected_status": "accept_candidate"}
+{"id": "asr-053", "query": "zolfresh 10", "expected_target": "Zolfresh 10", "expected_status": "accept_candidate"}
+{"id": "asr-054", "query": "benadryl cough syrup", "expected_target": "Benadryl", "expected_status": "accept_candidate"}
+{"id": "asr-055", "query": "avil 25 tablet", "expected_target": "Avil 25", "expected_status": "accept_candidate"}
+{"id": "asr-056", "query": "allegra 120", "expected_target": "Allegra 120", "expected_status": "accept_candidate"}
+{"id": "asr-057", "query": "cetzine 10", "expected_target": "Cetzine 10", "expected_status": "accept_candidate"}
+{"id": "asr-058", "query": "ciplar 40", "expected_target": "Ciplar 40", "expected_status": "accept_candidate"}
+{"id": "asr-059", "query": "aten 50", "expected_target": "Aten 50", "expected_status": "accept_candidate"}
+{"id": "asr-060", "query": "envas 5 mg", "expected_target": "Envas 5", "expected_status": "accept_candidate"}
+{"id": "asr-061", "query": "losar 50", "expected_target": "Losar 50", "expected_status": "accept_candidate"}
+{"id": "asr-062", "query": "arkamin 100", "expected_target": "Arkamin 100", "expected_status": "accept_candidate"}
+{"id": "asr-063", "query": "lanoxin 0.25", "expected_target": "Lanoxin 0.25", "expected_status": "accept_candidate"}
+{"id": "asr-064", "query": "cordarone 100", "expected_target": "Cordarone 100", "expected_status": "accept_candidate"}
+{"id": "asr-065", "query": "amitone 25", "expected_target": "Amitone 25", "expected_status": "accept_candidate"}
+{"id": "asr-066", "query": "tryptomer 10", "expected_target": "Tryptomer 10", "expected_status": "accept_candidate"}
+{"id": "asr-067", "query": "nexito 10", "expected_target": "Nexito 10", "expected_status": "accept_candidate"}
+{"id": "asr-068", "query": "sertima 50", "expected_target": "Sertima 50", "expected_status": "accept_candidate"}
+{"id": "asr-069", "query": "dulane 30", "expected_target": "Dulane 30", "expected_status": "accept_candidate"}
+{"id": "asr-070", "query": "gabapin 300", "expected_target": "Gabapin 300", "expected_status": "accept_candidate"}
+{"id": "asr-071", "query": "pregaba 75", "expected_target": "Pregaba 75", "expected_status": "accept_candidate"}
+{"id": "asr-072", "query": "syndopa 110", "expected_target": "Syndopa 110", "expected_status": "accept_candidate"}
+{"id": "asr-073", "query": "pacitane 2", "expected_target": "Pacitane 2", "expected_status": "accept_candidate"}
+{"id": "asr-074", "query": "seroquin 25", "expected_target": "Seroquin 25", "expected_status": "accept_candidate"}
+{"id": "asr-075", "query": "oleanz 5", "expected_target": "Oleanz 5", "expected_status": "accept_candidate"}
+{"id": "asr-076", "query": "perinorm 10", "expected_target": "Perinorm 10", "expected_status": "accept_candidate"}
+{"id": "asr-077", "query": "emeset 4", "expected_target": "Emeset 4", "expected_status": "accept_candidate"}
+{"id": "asr-078", "query": "thyronorm 50", "expected_target": "Thyronorm 50", "expected_status": "accept_candidate"}
+{"id": "asr-079", "query": "augmentin 625", "expected_target": "Augmentin 625", "expected_status": "accept_candidate"}
+{"id": "asr-080", "query": "azithral 500", "expected_target": "Azithral 500", "expected_status": "accept_candidate"}
+{"id": "asr-081", "query": "cifran 500", "expected_target": "Cifran 500", "expected_status": "accept_candidate"}
+{"id": "asr-082", "query": "calcirol 60k", "expected_target": "Calcirol 60k", "expected_status": "accept_candidate"}
+{"id": "asr-083", "query": "shelcal 500", "expected_target": "Shelcal 500", "expected_status": "accept_candidate"}
+{"id": "asr-084", "query": "becosules", "expected_target": "Becosules", "expected_status": "accept_candidate"}
+{"id": "asr-085", "query": "evion 400", "expected_target": "Evion 400", "expected_status": "accept_candidate"}
+{"id": "asr-086", "query": "ashwagandha capsule", "expected_target": "Himalaya Ashwagandha", "expected_status": "accept_candidate"}
+{"id": "asr-087", "query": "ginkgo biloba", "expected_target": "Ginkgo Biloba Extract", "expected_status": "accept_candidate"}
+{"id": "asr-088", "query": "turmeric extract", "expected_target": "Curcumin 95", "expected_status": "accept_candidate"}
+{"id": "asr-089", "query": "garlic pearls", "expected_target": "Garlic Pearls", "expected_status": "accept_candidate"}
+{"id": "asr-090", "query": "giloy ghanvati", "expected_target": "Patanjali Giloy Ghanvati", "expected_status": "accept_candidate"}
+{"id": "asr-091", "query": "triphala powder", "expected_target": "Baidyanath Triphala Churna", "expected_status": "accept_candidate"}
+{"id": "asr-092", "query": "brahmi tablet", "expected_target": "Himalaya Brahmi", "expected_status": "accept_candidate"}
+{"id": "asr-093", "query": "tel", "expected_target": null, "expected_status": "needs_clarification"}
+{"id": "asr-094", "query": "ator", "expected_target": null, "expected_status": "needs_clarification"}
+{"id": "asr-095", "query": "cro", "expected_target": null, "expected_status": "needs_clarification"}
+{"id": "asr-096", "query": "pan", "expected_target": null, "expected_status": "needs_clarification"}
+{"id": "asr-097", "query": "some delicious kaju katli", "expected_target": null, "expected_status": "unrecognized"}
+{"id": "asr-098", "query": "fast aeroplane flying", "expected_target": null, "expected_status": "unrecognized"}
+{"id": "asr-099", "query": "cricket world cup today", "expected_target": null, "expected_status": "unrecognized"}
+{"id": "asr-100", "query": "xyzzy123 random noise", "expected_target": null, "expected_status": "unrecognized"}
+

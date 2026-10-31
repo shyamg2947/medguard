@@ -1,0 +1,268 @@
+rules:
+  # 1. DUPLICATE INGREDIENT
+  - id: DUP-PARACETAMOL
+    type: duplicate_ingredient
+    version: 1
+    severity: high
+    evidence: established
+    domain: GI/Bleeding
+    a: {ingredient: paracetamol}
+    mechanism: "Taking paracetamol from multiple brand formulations or combination products increases the risk of cumulative acetaminophen overdose and hepatotoxicity."
+    patient_message:
+      en: "You appear to be taking paracetamol from more than one medicine. Taking too much paracetamol can harm the liver. Please ask your pharmacist or doctor to check your total daily dose."
+      hi: "आप एक से अधिक दवाओं से पेरासिटामोल ले रहे हैं। बहुत अधिक पेरासिटामोल लीवर को नुकसान पहुंचा सकता है। कृपया अपने फार्मासिस्ट या डॉक्टर से अपनी खुराक की जांच करवाएं।"
+    doctor_question: "Am I receiving paracetamol from multiple products, and does my total daily dose remain safely below 2000-3000 mg?"
+    sources:
+      - "FDA Drug Safety Communication: Acetaminophen Prescription Combination Products (2014)"
+      - "Indian Pharmacopoeia Monograph: Paracetamol"
+    review_status: seed_needs_review
+
+  # 2. DUPLICATE CLASS
+  - id: DUP-NSAID
+    type: duplicate_class
+    version: 1
+    severity: high
+    evidence: established
+    domain: GI/Bleeding
+    a: {class: nsaid}
+    mechanism: "Concurrent use of two non-steroidal anti-inflammatory drugs provides no additive analgesic efficacy but significantly multiplies gastrointestinal ulceration and renal toxicity risks."
+    patient_message:
+      en: "You are taking two different medicines from the anti-inflammatory painkiller family. Combining them does not give extra pain relief but greatly increases stomach and kidney danger. Please ask your doctor."
+      hi: "आप दर्द निवारक (NSAID) परिवार की दो अलग-अलग दवाएं ले रहे हैं। इन्हें मिलाने से दर्द में अधिक राहत नहीं मिलती, बल्कि पेट और गुर्दे को नुकसान का खतरा बढ़ जाता है।"
+    doctor_question: "Is there a reason I am taking two NSAID pain relievers together, and can one be safely discontinued or replaced?"
+    sources:
+      - "AGS Beers Criteria 2023 Update: Avoid concurrent use of two or more NSAIDs"
+      - "STOPP/START Criteria Version 3 (2023) Section A"
+    review_status: seed_needs_review
+
+  # 3. INTERACTION PAIR: Anticoagulant + NSAID
+  - id: DDI-WARFARIN-NSAID
+    type: interaction_pair
+    version: 1
+    severity: critical
+    evidence: established
+    domain: Cardiology
+    a: {class: anticoagulant}
+    b: {class: nsaid}
+    mechanism: "Synergistic inhibition of hemostasis and gastric mucosal defense: anticoagulation combined with platelet inhibition and gastric mucosal injury causes high gastrointestinal bleeding rates."
+    patient_message:
+      en: "One of your medicines thins the blood, while another is a painkiller that irritates the stomach and affects clotting. Together they significantly increase the chance of internal bleeding. Please contact your doctor promptly."
+      hi: "आपकी एक दवा खून पतला करती है, जबकि दूसरी दर्द निवारक दवा है जो पेट को परेशान कर सकती है। दोनों मिलकर आंतरिक रक्तस्राव का गंभीर खतरा पैदा करते हैं। कृपया तुरंत अपने डॉक्टर से संपर्क करें।"
+    doctor_question: "Because I am on a blood thinner, is it safe for me to take this pain reliever, and is there an alternative like paracetamol or topical therapy?"
+    sources:
+      - "FDA Prescribing Information: Warfarin Sodium (Black Box Warning)"
+      - "AGS Beers Criteria 2023: Anticoagulants and NSAIDs"
+    review_status: seed_needs_review
+
+  # 3b. INTERACTION PAIR: Anticoagulant + Antiplatelet
+  - id: DDI-ANTICOAG-ANTIPLATELET
+    type: interaction_pair
+    version: 1
+    severity: high
+    evidence: established
+    domain: Cardiology
+    a: {class: anticoagulant}
+    b: {class: antiplatelet}
+    mechanism: "Dual antithrombotic therapy significantly raises major hemorrhage and gastrointestinal bleeding risks, requiring clear clinical indication and strict duration limits."
+    patient_message:
+      en: "You are taking two different kinds of blood-thinning medicines together. This combination increases bleeding risks; please confirm with your doctor whether both are still needed."
+      hi: "आप दो अलग-अलग प्रकार की खून पतला करने वाली दवाएं साथ ले रहे हैं। इससे रक्तस्राव का खतरा बढ़ जाता है; कृपया अपने डॉक्टर से पुष्टि करें कि क्या दोनों की अभी भी आवश्यकता है।"
+    doctor_question: "Do I have an ongoing indication for both a blood thinner and an aspirin/antiplatelet, and when should this combination be reassessed?"
+    sources:
+      - "ACC/AHA Guideline for Dual Antiplatelet / Anticoagulant Therapy"
+      - "STOPP/START Criteria Version 3 (2023) Section B"
+    review_status: seed_needs_review
+
+  # 3c. INTERACTION PAIR: SSRI + NSAID
+  - id: DDI-SSRI-NSAID
+    type: interaction_pair
+    version: 1
+    severity: moderate
+    evidence: established
+    domain: GI/Bleeding
+    a: {class: ssri}
+    b: {class: nsaid}
+    mechanism: "SSRIs deplete platelet serotonin stores, reducing platelet aggregation; when paired with NSAIDs that cause gastric mucosal erosions, upper gastrointestinal bleeding risk is quadrupled."
+    patient_message:
+      en: "Your antidepressant and your pain reliever each affect blood clotting and stomach lining. Taken together, they can increase stomach bleeding risk. Ask your doctor if stomach protection or a different pain medicine is advised."
+      hi: "आपकी डिप्रेशन की दवा और दर्द निवारक मिलकर पेट में ब्लीडिंग का जोखिम बढ़ा सकते हैं। अपने डॉक्टर से पूछें कि क्या पेट की सुरक्षा वाली दवा आवश्यक है।"
+    doctor_question: "Should I be using a gastroprotective agent or an alternative painkiller while taking an SSRI medication?"
+    sources:
+      - "de Abajo FJ, et al. Risk of upper gastrointestinal bleeding associated with selective serotonin reuptake inhibitors. BMJ. 1999"
+      - "FDA Drug Safety Communication: SSRIs and Bleeding"
+    review_status: seed_needs_review
+
+  # 4. INTERACTION COMBO: Triple Whammy (Renal Injury)
+  - id: COMBO-TRIPLE-WHAMMY
+    type: interaction_combo
+    version: 1
+    severity: critical
+    evidence: established
+    domain: Nephrology
+    combo:
+      - {class: [ace_inhibitor, arb]}
+      - {class: diuretic}
+      - {class: nsaid}
+    mechanism: "The 'Triple Whammy': Diuretics induce hypovolemia, ACEi/ARBs prevent efferent arteriolar vasoconstriction, and NSAIDs block afferent arteriolar vasodilating prostaglandins, precipitating acute renal shutdown."
+    patient_message:
+      en: "You are taking three medicines that together place severe stress on your kidneys: a blood pressure pill, a water pill, and an anti-inflammatory pain medicine. This combination can cause sudden kidney injury. Please speak to your doctor right away."
+      hi: "आप तीन ऐसी दवाएं ले रहे हैं जो मिलकर आपके गुर्दे (किडनी) पर गंभीर दबाव डालती हैं: बीपी की दवा, पानी निकालने वाली दवा और दर्द निवारक। इससे गुर्दे को अचानक नुकसान हो सकता है। कृपया तुरंत अपने डॉक्टर से बात करें।"
+    doctor_question: "Given that I am on an ACEi/ARB and a diuretic, is an NSAID appropriate, and could we check my renal function and switch to a safer pain management approach?"
+    sources:
+      - "Thomas MC. Diuretics, ACE inhibitors and NSAIDs--the triple whammy. Med J Aust. 2000"
+      - "Loboz KK, Shenfield GM. Drug combinations causing acute renal failure: the triple whammy. Br J Clin Pharmacol. 2005"
+    review_status: seed_needs_review
+
+  # 5. BEERS PIM: Benzodiazepines in Seniors (Age >= 65)
+  - id: BEERS-BENZODIAZEPINE
+    type: beers_pim
+    version: 1
+    severity: high
+    evidence: established
+    domain: Geriatrics/Neurology
+    min_age: 65
+    a: {class: [benzodiazepine, sedative_hypnotic]}
+    mechanism: "Older adults have increased sensitivity to benzodiazepines and decreased metabolism, significantly increasing falls, fractures, delirium, and motor vehicle accidents."
+    patient_message:
+      en: "This calming or sleep medicine is on the list of medicines seniors should generally avoid, because it increases drowsiness, memory lapses, and the chance of falling. Please discuss safer sleep or anxiety options with your doctor."
+      hi: "यह नींद या तनाव की दवा बुजुर्गों के लिए सुरक्षित नहीं मानी जाती है, क्योंकि इससे चक्कर आने, भूलने और गिरने का खतरा काफी बढ़ जाता है। कृपया अपने डॉक्टर से बात करें।"
+    doctor_question: "Is this sedative or sleep medicine still necessary for me, and can we develop a gradual tapering plan or consider non-drug sleep strategies?"
+    sources:
+      - "AGS Beers Criteria 2023 Update: Benzodiazepines in Older Adults"
+      - "STOPP/START Criteria Version 3 (2023) Section D"
+    review_status: seed_needs_review
+
+  # 5b. BEERS PIM: First-generation Antihistamines (Age >= 65)
+  - id: BEERS-FIRST-GEN-ANTIHISTAMINE
+    type: beers_pim
+    version: 1
+    severity: high
+    evidence: established
+    domain: Geriatrics/Neurology
+    min_age: 65
+    a: {class: first_gen_antihistamine}
+    mechanism: "First-generation antihistamines possess potent anticholinergic activity, producing dry mouth, blurred vision, urinary retention, severe constipation, confusion, and falls in older adults."
+    patient_message:
+      en: "This allergy or cough medicine is strongly anticholinergic. In people over 65, it frequently causes confusion, dry mouth, urinary trouble, and falls. Please ask your doctor or pharmacist about modern, safer allergy alternatives."
+      hi: "यह एलर्जी या खांसी की दवा बुजुर्गों में भ्रम, मुंह सूखना, पेशाब में रुकावट और गिरने का कारण बन सकती है। कृपया अपने डॉक्टर से इसके सुरक्षित विकल्प के बारे में पूछें।"
+    doctor_question: "Could my antihistamine be switched to a non-sedating, modern second-generation medicine like cetirizine or fexofenadine?"
+    sources:
+      - "AGS Beers Criteria 2023 Update: First-Generation Antihistamines"
+      - "Anticholinergic Cognitive Burden Scale (Boustani et al.)"
+    review_status: seed_needs_review
+
+  # 6. DURATION EXCEEDED: PPI > 8 weeks
+  - id: DURATION-PPI-8WEEKS
+    type: duration_exceeded
+    version: 1
+    severity: moderate
+    evidence: established
+    domain: GI/Bleeding
+    a: {class: ppi}
+    max_duration_weeks: 8
+    mechanism: "Long-term proton pump inhibitor usage (> 8 weeks) without high-risk indication is associated with Clostridioides difficile infection, bone fractures, hypomagnesemia, and vitamin B12 deficiency."
+    patient_message:
+      en: "You have been taking an acid-reducing stomach medicine (PPI) for longer than 8 weeks. Unless prescribed for a chronic ulcer or severe condition, long-term use can weaken bones and lower magnesium. Ask your doctor if you still need it daily."
+      hi: "आप 8 सप्ताह से अधिक समय से पेट में गैस/एसिड की दवा (PPI) ले रहे हैं। लंबे समय तक इसका उपयोग हड्डियों को कमजोर कर सकता है। अपने डॉक्टर से पूछें कि क्या इसे जारी रखना जरूरी है।"
+    doctor_question: "I have been on this acid medicine for several months; is it appropriate to trial tapering the dose or stopping it?"
+    sources:
+      - "AGS Beers Criteria 2023 Update: Proton Pump Inhibitors"
+      - "FDA Drug Safety Communication on Long-term PPI Risks (2011)"
+    review_status: seed_needs_review
+
+  # 7. RENAL THRESHOLD: Metformin in Renal Impairment
+  - id: RENAL-METFORMIN
+    type: renal_threshold
+    version: 1
+    severity: high
+    evidence: established
+    domain: Nephrology
+    a: {ingredient: metformin}
+    crcl_threshold_ml_min: 30.0
+    egfr_threshold_ml_min: 30.0
+    mechanism: "Metformin is cleared almost entirely by the kidneys. When renal filtration drops below 30 mL/min, drug accumulation exponentially elevates the risk of life-threatening lactic acidosis."
+    patient_message:
+      en: "Your kidney test results suggest reduced kidney filtration. When kidneys filter slowly, metformin can build up in the body and become dangerous. Please contact your doctor for a dose check."
+      hi: "आपकी किडनी टेस्ट रिपोर्ट गुर्दे की धीमी कार्यप्रणाली दर्शाती है। ऐसे में मेटफॉर्मिन दवा शरीर में जमा होकर जोखिम पैदा कर सकती है। कृपया खुराक की समीक्षा के लिए तुरंत डॉक्टर से मिलें।"
+    doctor_question: "Based on my current kidney clearance (CrCl/eGFR), is my current dose of metformin still safe, or should we adjust or replace it?"
+    sources:
+      - "FDA Drug Safety Communication: FDA revises warnings regarding use of diabetes medicine metformin in certain patients with reduced kidney function (2016)"
+      - "KDIGO Clinical Practice Guideline for Diabetes Management in Chronic Kidney Disease"
+    review_status: seed_needs_review
+
+  # 7b. RENAL THRESHOLD: NSAID in Renal Impairment
+  - id: RENAL-NSAID
+    type: renal_threshold
+    version: 1
+    severity: high
+    evidence: established
+    domain: Nephrology
+    a: {class: nsaid}
+    crcl_threshold_ml_min: 30.0
+    egfr_threshold_ml_min: 30.0
+    mechanism: "In compromised kidneys, glomerular filtration depends on prostaglandin-mediated vasodilation. NSAIDs extinguish this defense, accelerating end-stage renal disease."
+    patient_message:
+      en: "Because your kidney filtration is reduced, anti-inflammatory painkillers can cause rapid loss of kidney function. Please ask your doctor for safer pain relief alternatives."
+      hi: "आपकी किडनी की कार्यक्षमता कम होने के कारण, दर्द निवारक दवाएं गुर्दे को तेजी से नुकसान पहुंचा सकती हैं। कृपया दर्द से राहत के लिए सुरक्षित विकल्प पूछें।"
+    doctor_question: "Is it safe for my kidneys to take this pain reliever, and can we prescribe a non-renal toxic option?"
+    sources:
+      - "KDIGO 2024 Clinical Practice Guideline for Chronic Kidney Disease"
+      - "STOPP/START Criteria Version 3 (2023) Section C"
+    review_status: seed_needs_review
+
+  # 8. HERBAL INTERACTION: Ashwagandha + Sedatives / Thyroid / Anticoagulants
+  - id: HERB-ASHWAGANDHA-INTERACTION
+    type: herbal_interaction
+    version: 1
+    severity: moderate
+    evidence: limited
+    domain: Geriatrics/Neurology
+    a: {ingredient: ashwagandha}
+    b: {class: [benzodiazepine, sedative_hypnotic, thyroid_hormone, anticoagulant, antiplatelet]}
+    mechanism: "Ashwagandha possesses GABA-mimetic activity that potentiates pharmaceutical sedatives, may stimulate thyroid hormone synthesis, and when combined with blood thinners may add to bleeding risks."
+    patient_message:
+      en: "You are taking Ashwagandha along with prescription medicines. Ashwagandha can interact with blood thinners and calming pills. Please inform your doctor about all supplements you take."
+      hi: "आप अंग्रेजी दवाओं के साथ अश्वगंधा ले रहे हैं। अश्वगंधा खून पतला करने वाली और नींद की दवाओं के साथ परस्पर क्रिया कर सकता है। कृपया अपने डॉक्टर को इसके बारे में बताएं।"
+    doctor_question: "I am taking an ashwagandha supplement; could it be interacting with my blood thinners, sedatives, or thyroid medications?"
+    sources:
+      - "Memorial Sloan Kettering Cancer Center: Ashwagandha Monograph"
+      - "NIH National Center for Complementary and Integrative Health (NCCIH)"
+    review_status: seed_needs_review
+
+  # 8b. HERBAL INTERACTION: Ginkgo / Garlic / Turmeric + Anticoagulant / Antiplatelet
+  - id: HERB-BLEEDING-HERBS
+    type: herbal_interaction
+    version: 1
+    severity: moderate
+    evidence: limited
+    domain: GI/Bleeding
+    a: {ingredient: [ginkgo biloba, garlic supplement, turmeric]}
+    b: {class: [anticoagulant, antiplatelet]}
+    mechanism: "Herbal supplements containing ginkgolides, high-dose allicin, or curcumin exert mild antiplatelet effects, which can increase bleeding risk when combined with pharmaceutical blood thinners."
+    patient_message:
+      en: "Herbal supplements like Ginkgo, high-dose garlic, or concentrated turmeric have mild blood-thinning properties. Combined with your blood thinner, they may increase bleeding risks. Please mention these supplements to your doctor."
+      hi: "जिन्कगो, लहसुन सप्लीमेंट या हल्दी अर्क जैसी हर्बल चीजें खून को पतला कर सकती हैं। खून पतला करने वाली दवा के साथ इन्हें लेने से ब्लीडिंग का खतरा बढ़ सकता है। कृपया अपने डॉक्टर को बताएं।"
+    doctor_question: "Is it safe to continue taking my herbal supplement alongside my prescribed blood thinner?"
+    sources:
+      - "NIH National Center for Complementary and Integrative Health: Herbs at a Glance"
+      - "FDA MedWatch Safety Alerts on Dietary Supplements and Anticoagulants"
+    review_status: seed_needs_review
+
+  # 9. DRUG CONDITION: NSAID in Peptic Ulcer Disease
+  - id: COND-NSAID-PUD
+    type: drug_condition
+    version: 1
+    severity: high
+    evidence: established
+    domain: GI/Bleeding
+    a: {class: nsaid}
+    condition: "peptic_ulcer"
+    mechanism: "Systemic NSAID administration inhibits COX-1 dependent prostaglandins, which are critical for gastric mucosal blood flow and bicarbonate secretion, precipitating ulcer recurrence or perforation."
+    patient_message:
+      en: "Your records note a history of stomach ulcers. Taking anti-inflammatory pain medicines can cause ulcers to bleed or recur. Please ask your doctor for ulcer-safe pain options."
+      hi: "आपके रिकॉर्ड में पेट के अल्सर की समस्या दर्ज है। दर्द निवारक दवाएं अल्सर को दोबारा सक्रिय कर सकती हैं या खून बहने का कारण बन सकती हैं। कृपया डॉक्टर से सुरक्षित विकल्प मांगें।"
+    doctor_question: "Because of my history of stomach ulcers, is there an alternative to this NSAID that will not harm my stomach?"
+    sources:
+      - "American College of Gastroenterology Ulcer Bleeding Guidelines"
+      - "STOPP/START Criteria Version 3 (2023) Section A"
+    review_status: seed_needs_review

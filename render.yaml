@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: medguard
+    runtime: python
+    buildCommand: "pip install -r requirements.txt && python scripts/seed_all.py && python scripts/prewarm_cache.py"
+    startCommand: "uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: MODE
+        value: demo
+      - key: FREE_TIER_MODE
+        value: "true"
+      - key: ALLOW_REAL_PATIENT_DATA
+        value: "false"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: VAULT_KEY
+        value: "7k7uC6y8oTq7qV6n3m2L1k0j9h8g7f6e5d4c3b2a1Z0="

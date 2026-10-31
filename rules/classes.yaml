@@ -1,0 +1,92 @@
+classes:
+  anticoagulant:
+    ingredients: [warfarin, apixaban, rivaroxaban, dabigatran, edoxaban, heparin]
+    domain: Cardiology
+  antiplatelet:
+    ingredients: [aspirin, clopidogrel, ticagrelor, prasugrel]
+    domain: Cardiology
+  nsaid:
+    ingredients: [ibuprofen, diclofenac, naproxen, indomethacin, celecoxib, piroxicam, ketorolac, mefenamic acid, meloxicam]
+    domain: GI/Bleeding
+  ace_inhibitor:
+    ingredients: [ramipril, enalapril, lisinopril, perindopril, captopril]
+    domain: Nephrology
+  arb:
+    ingredients: [telmisartan, losartan, valsartan, olmesartan, candesartan, irbesartan]
+    domain: Nephrology
+  calcium_channel_blocker:
+    ingredients: [amlodipine, nifedipine, felodipine, diltiazem, verapamil]
+    domain: Cardiology
+  beta_blocker:
+    ingredients: [metoprolol, atenolol, propranolol, carvedilol, bisoprolol, nebivolol]
+    domain: Cardiology
+  loop_diuretic:
+    ingredients: [furosemide, torsemide, bumetanide]
+    domain: Nephrology
+  thiazide_diuretic:
+    ingredients: [hydrochlorothiazide, chlorthalidone, indapamide]
+    domain: Nephrology
+  potassium_sparing_diuretic:
+    ingredients: [spironolactone, eplerenone, amiloride]
+    domain: Nephrology
+  diuretic:
+    ingredients: [furosemide, torsemide, bumetanide, hydrochlorothiazide, chlorthalidone, spironolactone, indapamide]
+    domain: Nephrology
+  biguanide:
+    ingredients: [metformin]
+    domain: Nephrology
+  sulfonylurea:
+    ingredients: [glimepiride, glibenclamide, gliclazide, glipizide]
+    domain: Geriatrics/Neurology
+  statin:
+    ingredients: [atorvastatin, rosuvastatin, simvastatin, pravastatin]
+    domain: Cardiology
+  ppi:
+    ingredients: [pantoprazole, omeprazole, rabeprazole, esomeprazole, lansoprazole]
+    domain: GI/Bleeding
+  benzodiazepine:
+    ingredients: [alprazolam, lorazepam, diazepam, clonazepam, clobazam, chlordiazepoxide, oxazepam]
+    domain: Geriatrics/Neurology
+  sedative_hypnotic:
+    ingredients: [zolpidem, zaleplon, eszopiclone, zopiclone]
+    domain: Geriatrics/Neurology
+  first_gen_antihistamine:
+    ingredients: [diphenhydramine, pheniramine, chlorpheniramine, hydroxyzine, promethazine, cyproheptadine, doxylamine]
+    domain: Geriatrics/Neurology
+  second_gen_antihistamine:
+    ingredients: [fexofenadine, cetirizine, levocetirizine, loratadine, bilastine]
+    domain: Geriatrics/Neurology
+  tca:
+    ingredients: [amitriptyline, nortriptyline, imipramine, clomipramine, dosulepin]
+    domain: Geriatrics/Neurology
+  ssri:
+    ingredients: [escitalopram, sertraline, fluoxetine, paroxetine, citalopram, fluvoxamine]
+    domain: Geriatrics/Neurology
+  snri:
+    ingredients: [duloxetine, venlafaxine, desvenlafaxine]
+    domain: Geriatrics/Neurology
+  antipsychotic:
+    ingredients: [haloperidol, quetiapine, olanzapine, clozapine, risperidone, aripiprazole]
+    domain: Geriatrics/Neurology
+  antiemetic_dopamine_antagonist:
+    ingredients: [metoclopramide, domperidone]
+    domain: GI/Bleeding
+  anticholinergic_antiparkinson:
+    ingredients: [trihexyphenidyl, benztropine]
+    domain: Geriatrics/Neurology
+  anticholinergic_bladder:
+    ingredients: [oxybutynin, tolterodine, darifenacin, solifenacin]
+    domain: Geriatrics/Neurology
+  cholinesterase_inhibitor:
+    ingredients: [donepezil, rivastigmine, galantamine]
+    domain: Geriatrics/Neurology
+  cardiac_glycoside:
+    ingredients: [digoxin]
+    domain: Cardiology
+  thyroid_hormone:
+    ingredients: [levothyroxine]
+    domain: Geriatrics/Neurology
+  herbal_product:
+    ingredients: [ashwagandha, ginkgo biloba, turmeric, garlic supplement, brahmi, triphala, giloy]
+    domain: GI/Bleeding
+

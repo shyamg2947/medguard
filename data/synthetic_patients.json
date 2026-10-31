@@ -1,0 +1,156 @@
+[
+  {
+    "id": "pat-scenario-a",
+    "name": "Synthetic Patient A (Bleeding Risk)",
+    "is_synthetic": true,
+    "age": 74,
+    "sex": "female",
+    "weight_kg": 62.0,
+    "language": "en",
+    "medications": [
+      {"brand": "Warf 5", "ingredients": [{"ingredient": "warfarin", "strength": "5mg"}], "start_date": "2024-01-10"},
+      {"brand": "Ecosprin 75", "ingredients": [{"ingredient": "aspirin", "strength": "75mg"}], "start_date": "2024-01-10"},
+      {"brand": "Combiflam", "ingredients": [{"ingredient": "ibuprofen", "strength": "400mg"}, {"ingredient": "paracetamol", "strength": "325mg"}], "start_date": "2024-10-01"},
+      {"brand": "Himalaya Ashwagandha", "ingredients": [{"ingredient": "ashwagandha", "strength": "250mg"}], "start_date": "2024-08-01"},
+      {"brand": "Pan 40", "ingredients": [{"ingredient": "pantoprazole", "strength": "40mg"}], "start_date": "14 weeks"}
+    ],
+    "labs": [],
+    "conditions": ["atrial_fibrillation", "osteoarthritis"]
+  },
+  {
+    "id": "pat-scenario-b",
+    "name": "Synthetic Patient B (Kidney Risk)",
+    "is_synthetic": true,
+    "age": 69,
+    "sex": "male",
+    "weight_kg": 70.0,
+    "language": "en",
+    "medications": [
+      {"brand": "Telma 40", "ingredients": [{"ingredient": "telmisartan", "strength": "40mg"}], "start_date": "2023-05-15"},
+      {"brand": "Lasix 40", "ingredients": [{"ingredient": "furosemide", "strength": "40mg"}], "start_date": "2024-02-10"},
+      {"brand": "Voveran 50", "ingredients": [{"ingredient": "diclofenac", "strength": "50mg"}], "start_date": "2024-10-15"},
+      {"brand": "Glycomet 500", "ingredients": [{"ingredient": "metformin", "strength": "500mg"}], "start_date": "2023-01-01"}
+    ],
+    "labs": [{"kind": "serum_creatinine_mg_dl", "value": 2.4}],
+    "conditions": ["hypertension", "type_2_diabetes"]
+  },
+  {
+    "id": "pat-scenario-c",
+    "name": "Synthetic Patient C (Cascade & Falls)",
+    "is_synthetic": true,
+    "age": 80,
+    "sex": "female",
+    "weight_kg": 54.0,
+    "language": "en",
+    "medications": [
+      {"brand": "Amlong 5", "ingredients": [{"ingredient": "amlodipine", "strength": "5mg"}], "start_date": "6 months"},
+      {"brand": "Dytor 10", "ingredients": [{"ingredient": "torsemide", "strength": "10mg"}], "start_date": "4 months"},
+      {"brand": "Benadryl", "ingredients": [{"ingredient": "diphenhydramine", "strength": "14mg"}], "start_date": "2024-09-01"},
+      {"brand": "Alprax 0.5", "ingredients": [{"ingredient": "alprazolam", "strength": "0.5mg"}], "start_date": "2024-08-15"}
+    ],
+    "symptoms": ["swelling", "dizziness"],
+    "conditions": ["hypertension", "insomnia"]
+  },
+  {
+    "id": "pat-scenario-d",
+    "name": "Synthetic Patient D (Boomerang Reconcile)",
+    "is_synthetic": true,
+    "age": 72,
+    "sex": "male",
+    "pre_admission_meds": ["Metformin 500 mg", "Amlodipine 5 mg", "Brufen 400 mg", "Atorvastatin 20 mg"],
+    "post_discharge_meds": ["Metformin 500 mg", "Amlodipine 5 mg", "Atorvastatin 20 mg", "Paracetamol 650 mg"],
+    "later_refill_meds": ["Metformin 500 mg", "Amlodipine 5 mg", "Brufen 400 mg", "Atorvastatin 20 mg"]
+  },
+  {
+    "id": "pat-005",
+    "name": "Synthetic Clean Regimen",
+    "is_synthetic": true,
+    "age": 66,
+    "sex": "female",
+    "weight_kg": 60.0,
+    "language": "hi",
+    "medications": [
+      {"brand": "Telma 40", "ingredients": [{"ingredient": "telmisartan", "strength": "40mg"}], "start_date": "2024-01-01"},
+      {"brand": "Atorva 10", "ingredients": [{"ingredient": "atorvastatin", "strength": "10mg"}], "start_date": "2024-01-01"}
+    ],
+    "conditions": ["hypertension", "dyslipidemia"]
+  },
+  {
+    "id": "pat-006",
+    "name": "Synthetic Duplicate Paracetamol",
+    "is_synthetic": true,
+    "age": 68,
+    "sex": "male",
+    "medications": [
+      {"brand": "Dolo 650", "ingredients": [{"ingredient": "paracetamol", "strength": "650mg"}]},
+      {"brand": "Combiflam", "ingredients": [{"ingredient": "ibuprofen", "strength": "400mg"}, {"ingredient": "paracetamol", "strength": "325mg"}]}
+    ]
+  },
+  {
+    "id": "pat-007",
+    "name": "Synthetic Anticoagulant Ginkgo",
+    "is_synthetic": true,
+    "age": 71,
+    "sex": "male",
+    "medications": [
+      {"brand": "Eliquis 5", "ingredients": [{"ingredient": "apixaban", "strength": "5mg"}]},
+      {"brand": "Ginkgo Biloba Extract", "ingredients": [{"ingredient": "ginkgo biloba", "strength": "120mg"}]}
+    ]
+  },
+  {
+    "id": "pat-008",
+    "name": "Synthetic NSAID PUD Risk",
+    "is_synthetic": true,
+    "age": 67,
+    "sex": "female",
+    "conditions": ["peptic_ulcer"],
+    "medications": [
+      {"brand": "Voveran 50", "ingredients": [{"ingredient": "diclofenac", "strength": "50mg"}]}
+    ]
+  },
+  {
+    "id": "pat-009",
+    "name": "Synthetic High ACB Score",
+    "is_synthetic": true,
+    "age": 78,
+    "sex": "female",
+    "medications": [
+      {"brand": "Tryptomer 25", "ingredients": [{"ingredient": "amitriptyline", "strength": "25mg"}]},
+      {"brand": "Pacitane 2", "ingredients": [{"ingredient": "trihexyphenidyl", "strength": "2mg"}]}
+    ]
+  },
+  {
+    "id": "pat-010",
+    "name": "Synthetic SSRI NSAID",
+    "is_synthetic": true,
+    "age": 65,
+    "sex": "male",
+    "medications": [
+      {"brand": "Nexito 10", "ingredients": [{"ingredient": "escitalopram", "strength": "10mg"}]},
+      {"brand": "Brufen 400", "ingredients": [{"ingredient": "ibuprofen", "strength": "400mg"}]}
+    ]
+  },
+  {
+    "id": "pat-011",
+    "name": "Synthetic Missing Labs Edge Case",
+    "is_synthetic": true,
+    "age": 82,
+    "sex": "male",
+    "medications": [
+      {"brand": "Glycomet 500", "ingredients": [{"ingredient": "metformin", "strength": "500mg"}]}
+    ],
+    "labs": []
+  },
+  {
+    "id": "pat-012",
+    "name": "Synthetic Duplicate NSAIDs",
+    "is_synthetic": true,
+    "age": 70,
+    "sex": "female",
+    "medications": [
+      {"brand": "Voveran 50", "ingredients": [{"ingredient": "diclofenac", "strength": "50mg"}]},
+      {"brand": "Brufen 400", "ingredients": [{"ingredient": "ibuprofen", "strength": "400mg"}]}
+    ]
+  }
+]
+

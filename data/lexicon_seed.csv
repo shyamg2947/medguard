@@ -1,0 +1,157 @@
+brand,ingredients,form,category,source
+Dolo 650,paracetamol:650mg,tablet,otc,Indian Pharmacopoeia
+Crocin,paracetamol:500mg,tablet,otc,Indian Pharmacopoeia
+Crocin Advance,paracetamol:500mg,tablet,otc,Indian Pharmacopoeia
+Calpol 500,paracetamol:500mg,tablet,otc,Indian Pharmacopoeia
+Calpol 650,paracetamol:650mg,tablet,otc,Indian Pharmacopoeia
+Paracip 650,paracetamol:650mg,tablet,otc,Indian Pharmacopoeia
+Combiflam,ibuprofen:400mg|paracetamol:325mg,tablet,prescription,CDSCO Approved FDC
+Ibugesic Plus,ibuprofen:400mg|paracetamol:325mg,tablet,prescription,CDSCO Approved FDC
+Brufen 400,ibuprofen:400mg,tablet,prescription,Indian Pharmacopoeia
+Brufen 200,ibuprofen:200mg,tablet,otc,Indian Pharmacopoeia
+Voveran 50,diclofenac:50mg,tablet,prescription,Indian Pharmacopoeia
+Voveran SR 100,diclofenac:100mg,tablet,prescription,Indian Pharmacopoeia
+Voltaren 50,diclofenac:50mg,tablet,prescription,FDA Label
+Ecosprin 75,aspirin:75mg,tablet,prescription,Indian Pharmacopoeia
+Ecosprin 150,aspirin:150mg,tablet,prescription,Indian Pharmacopoeia
+Disprin,aspirin:325mg,tablet,otc,Indian Pharmacopoeia
+Warf 5,warfarin:5mg,tablet,prescription,Indian Pharmacopoeia
+Warf 2,warfarin:2mg,tablet,prescription,Indian Pharmacopoeia
+Coumadin,warfarin:5mg,tablet,prescription,FDA Label
+Eliquis 2.5,apixaban:2.5mg,tablet,prescription,FDA Label
+Eliquis 5,apixaban:5mg,tablet,prescription,FDA Label
+Xarelto 10,rivaroxaban:10mg,tablet,prescription,FDA Label
+Xarelto 20,rivaroxaban:20mg,tablet,prescription,FDA Label
+Pradaxa 110,dabigatran:110mg,capsule,prescription,FDA Label
+Pradaxa 150,dabigatran:150mg,capsule,prescription,FDA Label
+Telma 40,telmisartan:40mg,tablet,prescription,Indian Pharmacopoeia
+Telma 80,telmisartan:80mg,tablet,prescription,Indian Pharmacopoeia
+Telma H,telmisartan:40mg|hydrochlorothiazide:12.5mg,tablet,prescription,CDSCO Approved FDC
+Telmikem 40,telmisartan:40mg,tablet,prescription,Indian Pharmacopoeia
+Telpres 40,telmisartan:40mg,tablet,prescription,Indian Pharmacopoeia
+Amlong 5,amlodipine:5mg,tablet,prescription,Indian Pharmacopoeia
+Amlong 10,amlodipine:10mg,tablet,prescription,Indian Pharmacopoeia
+Stamlo 5,amlodipine:5mg,tablet,prescription,Indian Pharmacopoeia
+Amtas 5,amlodipine:5mg,tablet,prescription,Indian Pharmacopoeia
+Cardace 2.5,ramipril:2.5mg,tablet,prescription,Indian Pharmacopoeia
+Cardace 5,ramipril:5mg,tablet,prescription,Indian Pharmacopoeia
+Ramipres 5,ramipril:5mg,tablet,prescription,Indian Pharmacopoeia
+Betaloc 25,metoprolol:25mg,tablet,prescription,Indian Pharmacopoeia
+Betaloc 50,metoprolol:50mg,tablet,prescription,Indian Pharmacopoeia
+Metolar 50,metoprolol:50mg,tablet,prescription,Indian Pharmacopoeia
+Lasix 40,furosemide:40mg,tablet,prescription,Indian Pharmacopoeia
+Dytor 10,torsemide:10mg,tablet,prescription,Indian Pharmacopoeia
+Dytor Plus,torsemide:10mg|spironolactone:50mg,tablet,prescription,CDSCO Approved FDC
+Aldactone 25,spironolactone:25mg,tablet,prescription,Indian Pharmacopoeia
+Glycomet 500,metformin:500mg,tablet,prescription,Indian Pharmacopoeia
+Glycomet 850,metformin:850mg,tablet,prescription,Indian Pharmacopoeia
+Glycomet 1000,metformin:1000mg,tablet,prescription,Indian Pharmacopoeia
+Glycomet GP 1,metformin:500mg|glimepiride:1mg,tablet,prescription,CDSCO Approved FDC
+Glycomet GP 2,metformin:500mg|glimepiride:2mg,tablet,prescription,CDSCO Approved FDC
+Amaryl 1,glimepiride:1mg,tablet,prescription,Indian Pharmacopoeia
+Amaryl 2,glimepiride:2mg,tablet,prescription,Indian Pharmacopoeia
+Daonil 5,glibenclamide:5mg,tablet,prescription,Indian Pharmacopoeia
+Januvia 100,sitagliptin:100mg,tablet,prescription,FDA Label
+Galvus 50,vildagliptin:50mg,tablet,prescription,Indian Pharmacopoeia
+Jardiance 10,empagliflozin:10mg,tablet,prescription,FDA Label
+Jardiance 25,empagliflozin:25mg,tablet,prescription,FDA Label
+Forxiga 10,dapagliflozin:10mg,tablet,prescription,FDA Label
+Atorva 10,atorvastatin:10mg,tablet,prescription,Indian Pharmacopoeia
+Atorva 20,atorvastatin:20mg,tablet,prescription,Indian Pharmacopoeia
+Atorva 40,atorvastatin:40mg,tablet,prescription,Indian Pharmacopoeia
+Lipitor 20,atorvastatin:20mg,tablet,prescription,FDA Label
+Storvas 20,atorvastatin:20mg,tablet,prescription,Indian Pharmacopoeia
+Rosuvas 10,rosuvastatin:10mg,tablet,prescription,Indian Pharmacopoeia
+Rosuvas 20,rosuvastatin:20mg,tablet,prescription,Indian Pharmacopoeia
+Pan 40,pantoprazole:40mg,tablet,prescription,Indian Pharmacopoeia
+Pan D,pantoprazole:40mg|domperidone:30mg,capsule,prescription,CDSCO Approved FDC
+Pantocid 40,pantoprazole:40mg,tablet,prescription,Indian Pharmacopoeia
+Omez 20,omeprazole:20mg,capsule,prescription,Indian Pharmacopoeia
+Omez D,omeprazole:20mg|domperidone:10mg,capsule,prescription,CDSCO Approved FDC
+Razo 20,rabeprazole:20mg,tablet,prescription,Indian Pharmacopoeia
+Rabicip 20,rabeprazole:20mg,tablet,prescription,Indian Pharmacopoeia
+Nexpro 40,esomeprazole:40mg,tablet,prescription,Indian Pharmacopoeia
+Alprax 0.25,alprazolam:0.25mg,tablet,prescription,Indian Pharmacopoeia
+Alprax 0.5,alprazolam:0.5mg,tablet,prescription,Indian Pharmacopoeia
+Restyl 0.25,alprazolam:0.25mg,tablet,prescription,Indian Pharmacopoeia
+Trika 0.5,alprazolam:0.5mg,tablet,prescription,Indian Pharmacopoeia
+Ativan 1,lorazepam:1mg,tablet,prescription,Indian Pharmacopoeia
+Ativan 2,lorazepam:2mg,tablet,prescription,Indian Pharmacopoeia
+Valium 5,diazepam:5mg,tablet,prescription,Indian Pharmacopoeia
+Clonafit 0.5,clonazepam:0.5mg,tablet,prescription,Indian Pharmacopoeia
+Zolfresh 10,zolpidem:10mg,tablet,prescription,Indian Pharmacopoeia
+Nitrest 10,zolpidem:10mg,tablet,prescription,Indian Pharmacopoeia
+Benadryl,diphenhydramine:14mg,syrup,otc,Indian Pharmacopoeia
+Avil 25,pheniramine:25mg,tablet,prescription,Indian Pharmacopoeia
+Allegra 120,fexofenadine:120mg,tablet,otc,Indian Pharmacopoeia
+Allegra 180,fexofenadine:180mg,tablet,otc,Indian Pharmacopoeia
+Cetzine 10,cetirizine:10mg,tablet,otc,Indian Pharmacopoeia
+Levocet 5,levocetirizine:5mg,tablet,prescription,Indian Pharmacopoeia
+Montair LC,levocetirizine:5mg|montelukast:10mg,tablet,prescription,CDSCO Approved FDC
+Ciplar 10,propranolol:10mg,tablet,prescription,Indian Pharmacopoeia
+Ciplar 40,propranolol:40mg,tablet,prescription,Indian Pharmacopoeia
+Aten 50,atenolol:50mg,tablet,prescription,Indian Pharmacopoeia
+Envas 5,enalapril:5mg,tablet,prescription,Indian Pharmacopoeia
+Losar 50,losartan:50mg,tablet,prescription,Indian Pharmacopoeia
+Losar H,losartan:50mg|hydrochlorothiazide:12.5mg,tablet,prescription,CDSCO Approved FDC
+Arkamin 100,clonidine:100mcg,tablet,prescription,Indian Pharmacopoeia
+Lanoxin 0.25,digoxin:0.25mg,tablet,prescription,Indian Pharmacopoeia
+Cordarone 100,amiodarone:100mg,tablet,prescription,Indian Pharmacopoeia
+Cordarone 200,amiodarone:200mg,tablet,prescription,Indian Pharmacopoeia
+Amitone 10,amitriptyline:10mg,tablet,prescription,Indian Pharmacopoeia
+Amitone 25,amitriptyline:25mg,tablet,prescription,Indian Pharmacopoeia
+Tryptomer 10,amitriptyline:10mg,tablet,prescription,Indian Pharmacopoeia
+Tryptomer 25,amitriptyline:25mg,tablet,prescription,Indian Pharmacopoeia
+Nexito 10,escitalopram:10mg,tablet,prescription,Indian Pharmacopoeia
+Nexito Plus,escitalopram:5mg|clonazepam:0.5mg,tablet,prescription,CDSCO Approved FDC
+Stalopam 10,escitalopram:10mg,tablet,prescription,Indian Pharmacopoeia
+Sertima 50,sertraline:50mg,tablet,prescription,Indian Pharmacopoeia
+Daxid 50,sertraline:50mg,tablet,prescription,Indian Pharmacopoeia
+Dulane 20,duloxetine:20mg,capsule,prescription,Indian Pharmacopoeia
+Dulane 30,duloxetine:30mg,capsule,prescription,Indian Pharmacopoeia
+Gabapin 100,gabapentin:100mg,capsule,prescription,Indian Pharmacopoeia
+Gabapin 300,gabapentin:300mg,capsule,prescription,Indian Pharmacopoeia
+Pregaba 75,pregabalin:75mg,capsule,prescription,Indian Pharmacopoeia
+Maxgalin 75,pregabalin:75mg,capsule,prescription,Indian Pharmacopoeia
+Syndopa 110,levodopa:100mg|carbidopa:10mg,tablet,prescription,Indian Pharmacopoeia
+Syndopa Plus,levodopa:100mg|carbidopa:25mg,tablet,prescription,Indian Pharmacopoeia
+Pacitane 2,trihexyphenidyl:2mg,tablet,prescription,Indian Pharmacopoeia
+Seroquin 25,quetiapine:25mg,tablet,prescription,Indian Pharmacopoeia
+Sizopin 25,clozapine:25mg,tablet,prescription,Indian Pharmacopoeia
+Oleanz 5,olanzapine:5mg,tablet,prescription,Indian Pharmacopoeia
+Haloperidol 1.5,haloperidol:1.5mg,tablet,prescription,Indian Pharmacopoeia
+Perinorm 10,metoclopramide:10mg,tablet,prescription,Indian Pharmacopoeia
+Emeset 4,ondansetron:4mg,tablet,prescription,Indian Pharmacopoeia
+Emeset 8,ondansetron:8mg,tablet,prescription,Indian Pharmacopoeia
+Thyronorm 25,levothyroxine:25mcg,tablet,prescription,Indian Pharmacopoeia
+Thyronorm 50,levothyroxine:50mcg,tablet,prescription,Indian Pharmacopoeia
+Thyronorm 75,levothyroxine:75mcg,tablet,prescription,Indian Pharmacopoeia
+Thyronorm 100,levothyroxine:100mcg,tablet,prescription,Indian Pharmacopoeia
+Eltroxin 50,levothyroxine:50mcg,tablet,prescription,Indian Pharmacopoeia
+Augmentin 625,amoxicillin:500mg|clavulanic acid:125mg,tablet,prescription,Indian Pharmacopoeia
+Moxikind CV 625,amoxicillin:500mg|clavulanic acid:125mg,tablet,prescription,CDSCO Approved FDC
+Azithral 500,azithromycin:500mg,tablet,prescription,Indian Pharmacopoeia
+Cifran 500,ciprofloxacin:500mg,tablet,prescription,Indian Pharmacopoeia
+Oflox 200,ofloxacin:200mg,tablet,prescription,Indian Pharmacopoeia
+Taxim O 200,cefixime:200mg,tablet,prescription,Indian Pharmacopoeia
+Monotrate 20,isosorbide mononitrate:20mg,tablet,prescription,Indian Pharmacopoeia
+Sorbitrate 5,isosorbide dinitrate:5mg,tablet,prescription,Indian Pharmacopoeia
+Angispan TR 2.5,nitroglycerin:2.5mg,capsule,prescription,Indian Pharmacopoeia
+Calcirol 60k,cholecalciferol:60000iu,sachet,otc,Indian Pharmacopoeia
+Shelcal 500,calcium:500mg|cholecalciferol:250iu,tablet,otc,Indian Pharmacopoeia
+Becosules,vitamin b complex:1tab,capsule,otc,Indian Pharmacopoeia
+Neurobion Forte,vitamin b complex:1tab,tablet,otc,Indian Pharmacopoeia
+Evion 400,vitamin e:400mg,capsule,otc,Indian Pharmacopoeia
+Limcee 500,vitamin c:500mg,tablet,otc,Indian Pharmacopoeia
+Liv 52,herbal extract:1tab,tablet,ayush,Ayurvedic Pharmacopoeia
+Himalaya Ashwagandha,ashwagandha:250mg,capsule,ayush,Ayurvedic Pharmacopoeia
+Patanjali Ashwagandha Churna,ashwagandha:1tsp,powder,ayush,Ayurvedic Pharmacopoeia
+Organic India Ashwagandha,ashwagandha:400mg,capsule,ayush,Ayurvedic Pharmacopoeia
+Himalaya Brahmi,brahmi:250mg,tablet,ayush,Ayurvedic Pharmacopoeia
+Patanjali Giloy Ghanvati,giloy:500mg,tablet,ayush,Ayurvedic Pharmacopoeia
+Baidyanath Triphala Churna,triphala:1tsp,powder,ayush,Ayurvedic Pharmacopoeia
+Dabur Chyawanprash,herbal jam:1tbsp,paste,ayush,Ayurvedic Pharmacopoeia
+Ginkgo Biloba Extract,ginkgo biloba:120mg,capsule,supplement,USP Monograph
+Garlic Pearls,garlic extract:250mg,capsule,supplement,Ayurvedic Pharmacopoeia
+Curcumin 95,turmeric:500mg,capsule,supplement,USP Monograph
+

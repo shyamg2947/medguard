@@ -88,7 +88,9 @@ def readyz():
     return {"ready": True, "free_tier_mode": get_settings().FREE_TIER_MODE}
 
 
-# Serve built frontend SPA if frontend/dist exists
+# Serve built frontend SPA if frontend/dist or docs exists
 frontend_dist = os.path.join(os.getcwd(), "frontend", "dist")
-if os.path.exists(frontend_dist):
+if not os.path.exists(frontend_dist):
+    frontend_dist = os.path.join(os.getcwd(), "docs")
+if os.path.exists(frontend_dist) and os.path.exists(os.path.join(frontend_dist, "index.html")):
     app.mount("/", StaticFiles(directory=frontend_dist, html=True), name="frontend")

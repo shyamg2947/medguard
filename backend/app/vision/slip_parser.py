@@ -3,7 +3,8 @@ Prescription Slip Parser.
 Extracts candidate medication lines from paper or printed prescriptions.
 Flags handwritten text as lower confidence, requiring mandatory confirmation.
 """
-from typing import Any, Dict, List
+from __future__ import annotations
+from typing import Any, Dict, List, Optional
 import re
 from backend.app.entities.resolver import resolve_medication_query
 from backend.app.vision.ocr import get_ocr_provider

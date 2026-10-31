@@ -2,6 +2,10 @@
 
 MedGuard is an accessible, voice-first medication-safety assistant designed for elderly people in India. It collects a senior's full medication picture (prescriptions, OTC drugs, supplements, and AYUSH/herbal formulations) from voice notes, photos, and text, normalizes them to canonical generic ingredients, evaluates them with a deterministic clinical rules engine, and produces a structured **Doctor Discussion Guide**.
 
+<p align="center">
+  <img src="./docs/architecture_poster.jpg" alt="MedGuard System Architecture" width="700" />
+</p>
+
 > [!IMPORTANT]
 > **Decision Support Only:** MedGuard is a communication and decision-support aid. It is **not a doctor and does not diagnose, prescribe, or direct patients to stop or change therapy.** All alerts formulate neutral questions for the prescribing physician.
 

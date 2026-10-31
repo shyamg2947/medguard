@@ -2,6 +2,8 @@
 
 MedGuard is engineered as a privacy-preserving, deterministic decision-support platform for geriatric medication safety.
 
+![MedGuard System Architecture](./docs/architecture_poster.jpg)
+
 ---
 
 ## 1. System Overview

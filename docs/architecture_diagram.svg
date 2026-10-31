@@ -1,0 +1,294 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1420" width="100%" height="100%" style="background-color: #fbfbfd; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Card Shadow -->
+    <filter id="cardShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.06" />
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.04" />
+    </filter>
+    <filter id="glowAlert" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#ef4444" flood-opacity="0.2" />
+    </filter>
+    
+    <!-- Gradients -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="alertGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f87171" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+    <linearGradient id="dbGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="vaultGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    
+    <!-- Markers -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#64748b" />
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0284c7" />
+    </marker>
+  </defs>
+
+  <!-- ==================== HEADER ==================== -->
+  <g transform="translate(0, 45)">
+    <!-- Brand Pill / Cross Icon -->
+    <g transform="translate(500, 25)">
+      <circle cx="0" cy="0" r="28" fill="url(#shieldGrad)" />
+      <!-- Medical Cross & Shield -->
+      <path d="M -8 -4 L -4 -4 L -4 -8 L 4 -8 L 4 -4 L 8 -4 L 8 4 L 4 4 L 4 8 L -4 8 L -4 4 L -8 4 Z" fill="#ffffff" />
+    </g>
+    
+    <text x="500" y="85" text-anchor="middle" font-size="34" font-weight="800" fill="#0f172a" letter-spacing="1.5">MEDGUARD</text>
+    <text x="500" y="112" text-anchor="middle" font-size="19" font-weight="600" fill="#e11d48" letter-spacing="0.5">System Design &amp; Architecture</text>
+    <text x="500" y="134" text-anchor="middle" font-size="13" font-weight="500" fill="#64748b">Voice-First Multilingual Medication Safety Platform for Seniors</text>
+    <rect x="420" y="146" width="160" height="2" fill="#e2e8f0" rx="1" />
+  </g>
+
+  <!-- ==================== LAYER 1: CLIENTS & CHANNELS ==================== -->
+  <g transform="translate(60, 230)">
+    <!-- Container -->
+    <rect x="0" y="0" width="880" height="150" rx="18" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#cardShadow)" />
+    <rect x="24" y="-12" width="160" height="24" rx="12" fill="#0284c7" />
+    <text x="104" y="4" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="0.5">CLIENT LAYER</text>
+
+    <!-- Client 1: Senior Citizen Voice & Camera -->
+    <g transform="translate(40, 28)">
+      <rect x="0" y="0" width="240" height="96" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" />
+      <circle cx="36" cy="36" r="18" fill="#e0f2fe" />
+      <text x="36" y="42" text-anchor="middle" font-size="18">👴</text>
+      <text x="68" y="32" font-size="14" font-weight="700" fill="#0f172a">Senior Mode PWA</text>
+      <text x="68" y="48" font-size="11" font-weight="500" fill="#64748b">High-Contrast UI • Voice STT</text>
+      <text x="20" y="78" font-size="11" font-weight="600" fill="#0284c7">📷 Rx Camera Photo Scan</text>
+    </g>
+
+    <!-- Client 2: WhatsApp Chat & Caregiver -->
+    <g transform="translate(320, 28)">
+      <rect x="0" y="0" width="240" height="96" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" />
+      <circle cx="36" cy="36" r="18" fill="#dcfce7" />
+      <text x="36" y="42" text-anchor="middle" font-size="18">💬</text>
+      <text x="68" y="32" font-size="14" font-weight="700" fill="#0f172a">WhatsApp Simulator</text>
+      <text x="68" y="48" font-size="11" font-weight="500" fill="#64748b">Bilingual Chat (HI / EN)</text>
+      <text x="20" y="78" font-size="11" font-weight="600" fill="#16a34a">Family Caregiver Alerts</text>
+    </g>
+
+    <!-- Client 3: Clinical Review Dashboard -->
+    <g transform="translate(600, 28)">
+      <rect x="0" y="0" width="240" height="96" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" />
+      <circle cx="36" cy="36" r="18" fill="#ede9fe" />
+      <text x="36" y="42" text-anchor="middle" font-size="18">🩺</text>
+      <text x="68" y="32" font-size="14" font-weight="700" fill="#0f172a">Doctor Portal</text>
+      <text x="68" y="48" font-size="11" font-weight="500" fill="#64748b">Drug Charts • eGFR Labs</text>
+      <text x="20" y="78" font-size="11" font-weight="600" fill="#7c3aed">📄 1-Page PDF Clinical Export</text>
+    </g>
+  </g>
+
+  <!-- Connectors: Clients -> Gateway -->
+  <path d="M 180 380 L 180 430 L 470 430 L 470 455" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 500 380 L 500 455" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 720 380 L 720 430 L 530 430 L 530 455" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- ==================== LAYER 2: FASTAPI GATEWAY & PRIVACY VAULT ==================== -->
+  <g transform="translate(140, 460)">
+    <!-- API Gateway Box -->
+    <rect x="0" y="0" width="450" height="110" rx="16" fill="#ffffff" stroke="#0284c7" stroke-width="2" filter="url(#cardShadow)" />
+    <rect x="20" y="-12" width="180" height="24" rx="12" fill="#0284c7" />
+    <text x="110" y="4" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">FASTAPI WEB SERVER</text>
+    
+    <g transform="translate(24, 25)">
+      <text x="0" y="20" font-size="15" font-weight="700" fill="#0f172a">REST Endpoints &amp; Static SPA Host</text>
+      <text x="0" y="40" font-size="12" font-weight="500" fill="#64748b">/simulator/chat • /patients • /review • /docs</text>
+      <rect x="0" y="52" width="130" height="20" rx="4" fill="#e0f2fe" />
+      <text x="65" y="66" text-anchor="middle" font-size="10" font-weight="700" fill="#0369a1">Uvicorn Async ASGI</text>
+      <rect x="140" y="52" width="110" height="20" rx="4" fill="#f1f5f9" />
+      <text x="195" y="66" text-anchor="middle" font-size="10" font-weight="600" fill="#475569">RBAC Auth Bearer</text>
+    </g>
+
+    <!-- Privacy Vault Card (Right Side of Gateway) -->
+    <g transform="translate(480, 0)">
+      <rect x="0" y="0" width="240" height="110" rx="16" fill="#ffffff" stroke="#10b981" stroke-width="2" filter="url(#cardShadow)" />
+      <rect x="20" y="-12" width="160" height="24" rx="12" fill="#10b981" />
+      <text x="100" y="4" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">ZERO-PII PRIVACY VAULT</text>
+      
+      <g transform="translate(18, 26)">
+        <text x="0" y="18" font-size="13" font-weight="700" fill="#0f172a">Fernet AES-256 De-ID</text>
+        <text x="0" y="36" font-size="11" font-weight="500" fill="#64748b">Tokens real names to Patient_XXXX</text>
+        <text x="0" y="54" font-size="11" font-weight="600" fill="#059669">✓ Aadhaar &amp; Phone Sanitizer</text>
+        <text x="0" y="70" font-size="10" font-weight="500" fill="#047857">Guarantees zero PII sent to LLM</text>
+      </g>
+    </g>
+
+    <!-- Connector: Gateway <-> Privacy Vault -->
+    <path d="M 450 55 L 480 55" fill="none" stroke="#10b981" stroke-width="2" stroke-dasharray="4" marker-end="url(#arrow)" />
+  </g>
+
+  <!-- Connectors: Gateway -> Core Engines -->
+  <path d="M 280 570 L 280 635" fill="none" stroke="#0284c7" stroke-width="2" marker-end="url(#arrowBlue)" />
+  <path d="M 500 570 L 500 635" fill="none" stroke="#0284c7" stroke-width="2" marker-end="url(#arrowBlue)" />
+  <path d="M 720 570 L 720 635" fill="none" stroke="#0284c7" stroke-width="2" marker-end="url(#arrowBlue)" />
+
+  <!-- ==================== LAYER 3: CORE INTELLIGENCE ENGINES ==================== -->
+  <g transform="translate(60, 640)">
+    <!-- Container -->
+    <rect x="0" y="0" width="880" height="270" rx="18" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#cardShadow)" />
+    <rect x="24" y="-12" width="220" height="24" rx="12" fill="#1e293b" />
+    <text x="134" y="4" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="0.5">CORE CLINICAL INTELLIGENCE</text>
+
+    <!-- Engine 1: Vision & Slip Parser -->
+    <g transform="translate(30, 30)">
+      <rect x="0" y="0" width="250" height="210" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2" />
+      <rect x="16" y="16" width="36" height="36" rx="8" fill="#e0f2fe" />
+      <text x="34" y="40" text-anchor="middle" font-size="18">👁️</text>
+      <text x="62" y="32" font-size="14" font-weight="700" fill="#0f172a">Rx Vision &amp; OCR</text>
+      <text x="62" y="48" font-size="11" font-weight="500" fill="#0284c7">Doctor Slip Parser</text>
+      
+      <path d="M 16 64 L 234 64" stroke="#e2e8f0" stroke-width="1" />
+      <text x="16" y="84" font-size="11" font-weight="600" fill="#334155">• Image Preprocessing</text>
+      <text x="16" y="104" font-size="11" font-weight="500" fill="#64748b">• OCR Line Extraction</text>
+      <text x="16" y="124" font-size="11" font-weight="500" fill="#64748b">• Strength &amp; Dosage Tokenizer</text>
+      <text x="16" y="144" font-size="11" font-weight="500" fill="#64748b">• Confidence Scoring</text>
+      
+      <rect x="16" y="165" width="218" height="28" rx="6" fill="#fef2f2" stroke="#fca5a5" stroke-width="1" />
+      <text x="125" y="183" text-anchor="middle" font-size="10" font-weight="700" fill="#dc2626">Direct Drug Safety Verification</text>
+    </g>
+
+    <!-- Engine 2: Indian Drug Lexicon (Center Top) -->
+    <g transform="translate(315, 30)">
+      <rect x="0" y="0" width="250" height="98" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2" />
+      <rect x="14" y="14" width="32" height="32" rx="6" fill="#fef3c7" />
+      <text x="30" y="36" text-anchor="middle" font-size="16">💊</text>
+      <text x="56" y="28" font-size="13" font-weight="700" fill="#0f172a">Indian Drug Lexicon</text>
+      <text x="56" y="44" font-size="11" font-weight="500" fill="#d97706">Brand ➔ Generic Resolver</text>
+      <text x="14" y="70" font-size="11" font-weight="500" fill="#475569">Combiflam ➔ Ibuprofen + Paracetamol</text>
+      <text x="14" y="86" font-size="10" font-weight="600" fill="#0284c7">10,000+ Indian Formulations &amp; ATC Codes</text>
+    </g>
+
+    <!-- Engine 3: Deterministic Rules Engine (Center Bottom) -->
+    <g transform="translate(315, 142)">
+      <rect x="0" y="0" width="250" height="98" rx="14" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5" />
+      <rect x="14" y="14" width="32" height="32" rx="6" fill="#dcfce7" />
+      <text x="30" y="36" text-anchor="middle" font-size="16">⚡</text>
+      <text x="56" y="28" font-size="13" font-weight="800" fill="#166534">Deterministic Rules</text>
+      <text x="56" y="44" font-size="11" font-weight="600" fill="#15803d">Zero-Hallucination Guard</text>
+      <text x="14" y="68" font-size="10.5" font-weight="600" fill="#1e293b">• Beers 2023 Criteria (PIMs)</text>
+      <text x="14" y="84" font-size="10.5" font-weight="600" fill="#dc2626">• DDIs (Warfarin + NSAID Bleeding)</text>
+    </g>
+
+    <!-- Engine 4: Clinical RAG Search -->
+    <g transform="translate(600, 30)">
+      <rect x="0" y="0" width="250" height="98" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2" />
+      <rect x="14" y="14" width="32" height="32" rx="6" fill="#e0e7ff" />
+      <text x="30" y="36" text-anchor="middle" font-size="16">📚</text>
+      <text x="56" y="28" font-size="13" font-weight="700" fill="#0f172a">Clinical RAG Search</text>
+      <text x="56" y="44" font-size="11" font-weight="500" fill="#4f46e5">BM25 Citation Engine</text>
+      <text x="14" y="70" font-size="11" font-weight="500" fill="#475569">CDSCO Advisories &amp; Pharmacopeia</text>
+      <text x="14" y="86" font-size="10" font-weight="600" fill="#4338ca">Enforces strict medical citations</text>
+    </g>
+
+    <!-- Engine 5: Offline Cache & Gateway -->
+    <g transform="translate(600, 142)">
+      <rect x="0" y="0" width="250" height="98" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2" />
+      <rect x="14" y="14" width="32" height="32" rx="6" fill="#fae8ff" />
+      <text x="30" y="36" text-anchor="middle" font-size="16">🧠</text>
+      <text x="56" y="28" font-size="13" font-weight="700" fill="#0f172a">Offline LLM Gateway</text>
+      <text x="56" y="44" font-size="11" font-weight="500" fill="#a21caf">LangGraph Agent Guardrails</text>
+      <text x="14" y="68" font-size="11" font-weight="500" fill="#475569">Prompt Hash &amp; Pre-Warmed Cache</text>
+      <text x="14" y="84" font-size="10" font-weight="600" fill="#86198f">100% Offline Demo • Zero API Bills</text>
+    </g>
+
+    <!-- Internal Connectors -->
+    <path d="M 280 80 L 315 80" fill="none" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)" />
+    <path d="M 440 128 L 440 142" fill="none" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)" />
+    <path d="M 565 190 L 600 190" fill="none" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)" />
+  </g>
+
+  <!-- Connectors: Engines -> Storage Layer -->
+  <path d="M 500 910 L 500 970" fill="none" stroke="#0284c7" stroke-width="2.5" marker-end="url(#arrowBlue)" />
+
+  <!-- ==================== LAYER 4: DATABASE & PERSISTENCE ==================== -->
+  <g transform="translate(180, 975)">
+    <rect x="0" y="0" width="640" height="120" rx="16" fill="#ffffff" stroke="#3b82f6" stroke-width="2" filter="url(#cardShadow)" />
+    <rect x="20" y="-12" width="200" height="24" rx="12" fill="#2563eb" />
+    <text x="120" y="4" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">RELATIONAL DATABASE LAYER</text>
+
+    <!-- Database Cylinder Art -->
+    <g transform="translate(30, 22)">
+      <ellipse cx="28" cy="16" rx="26" ry="10" fill="#60a5fa" />
+      <rect x="2" y="16" width="52" height="42" fill="#3b82f6" />
+      <ellipse cx="28" cy="58" rx="26" ry="10" fill="#2563eb" />
+      <ellipse cx="28" cy="30" rx="26" ry="8" fill="none" stroke="#93c5fd" stroke-width="1.5" />
+      <ellipse cx="28" cy="44" rx="26" ry="8" fill="none" stroke="#93c5fd" stroke-width="1.5" />
+    </g>
+
+    <g transform="translate(100, 24)">
+      <text x="0" y="18" font-size="15" font-weight="700" fill="#0f172a">SQLite 3 / SQLAlchemy 2.0 ORM</text>
+      <text x="0" y="38" font-size="11.5" font-weight="500" fill="#475569">18 Relational Models: Patients • Active Prescriptions • Lab eGFR • Clinician Alerts</text>
+      <text x="0" y="56" font-size="11" font-weight="500" fill="#64748b">Encrypted PII Vault Entries • Pre-warmed Scenario Cache • Audit Trails</text>
+      
+      <rect x="0" y="66" width="160" height="20" rx="4" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1" />
+      <text x="80" y="80" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">Postgres Drop-in Ready</text>
+      
+      <rect x="170" y="66" width="160" height="20" rx="4" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1" />
+      <text x="250" y="80" text-anchor="middle" font-size="10" font-weight="700" fill="#15803d">Auto-Seeded Test Patients</text>
+    </g>
+  </g>
+
+  <!-- Connectors: Storage -> Output Services -->
+  <path d="M 500 1095 L 500 1155" fill="none" stroke="#0284c7" stroke-width="2.5" marker-end="url(#arrowBlue)" />
+
+  <!-- ==================== LAYER 5: OUTPUT SERVICES ==================== -->
+  <g transform="translate(60, 1160)">
+    <!-- Container -->
+    <rect x="0" y="0" width="880" height="150" rx="18" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#cardShadow)" />
+    <rect x="24" y="-12" width="180" height="24" rx="12" fill="#059669" />
+    <text x="114" y="4" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="0.5">OUTPUT &amp; SAFETY DELIVERY</text>
+
+    <!-- Output 1: Senior Voice TTS -->
+    <g transform="translate(40, 28)">
+      <rect x="0" y="0" width="240" height="96" rx="12" fill="#f0fdf4" stroke="#86efac" stroke-width="1.2" />
+      <circle cx="36" cy="36" r="18" fill="#dcfce7" />
+      <text x="36" y="42" text-anchor="middle" font-size="18">🔊</text>
+      <text x="68" y="32" font-size="14" font-weight="700" fill="#166534">Senior Voice TTS</text>
+      <text x="68" y="48" font-size="11" font-weight="500" fill="#15803d">Web Speech API Read-Aloud</text>
+      <text x="20" y="78" font-size="11" font-weight="600" fill="#16a34a">Bilingual (Hindi + English) at 0.88x</text>
+    </g>
+
+    <!-- Output 2: Doctor Safety PDF Report -->
+    <g transform="translate(320, 28)">
+      <rect x="0" y="0" width="240" height="96" rx="12" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.2" />
+      <circle cx="36" cy="36" r="18" fill="#dbeafe" />
+      <text x="36" y="42" text-anchor="middle" font-size="18">📄</text>
+      <text x="68" y="32" font-size="14" font-weight="700" fill="#1e40af">Doctor Safety PDF</text>
+      <text x="68" y="48" font-size="11" font-weight="500" fill="#2563eb">ReportLab Clinical Engine</text>
+      <text x="20" y="78" font-size="11" font-weight="600" fill="#1d4ed8">A4 Multi-page &amp; Wallet Cards</text>
+    </g>
+
+    <!-- Output 3: Emergency Responder QR -->
+    <g transform="translate(600, 28)">
+      <rect x="0" y="0" width="240" height="96" rx="12" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.2" />
+      <circle cx="36" cy="36" r="18" fill="#ffedd5" />
+      <text x="36" y="42" text-anchor="middle" font-size="18">📱</text>
+      <text x="68" y="32" font-size="14" font-weight="700" fill="#9a3412">Emergency Card</text>
+      <text x="68" y="48" font-size="11" font-weight="500" fill="#ea580c">Instant Paramedic QR Scan</text>
+      <text x="20" y="78" font-size="11" font-weight="600" fill="#c2410c">Offline Allergy &amp; Med Summary</text>
+    </g>
+  </g>
+
+  <!-- ==================== FOOTER ==================== -->
+  <g transform="translate(500, 1375)">
+    <line x1="-400" y1="0" x2="400" y2="0" stroke="#e2e8f0" stroke-width="1" />
+    <text x="0" y="24" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b" letter-spacing="0.5">
+      MedGuard Architecture Specification • Zero-PII Privacy Vault • AGS Beers 2023 Guidelines • CDSCO Compliant
+    </text>
+  </g>
+</svg>
